@@ -1,0 +1,50 @@
+.content{
+    width:500px;
+    height:600px;
+    border:12px solid red;
+    margin:auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 10px black;
+}
+.content img{
+    width:inherit;
+    height: inherit;
+    
+}
+
+.content-right{
+    background-image: url("Classic-Doors-033.jpg");
+    position:absolute;
+    top:0;
+    right:-270px;
+    width:150%;
+    height: 200%;
+    transform: perspective(400px) rotateY(0);
+    transform-origin: right;
+    transition: all 2s;
+}
+.content-right{
+    width:inherit;
+    height: inherit;
+}
+
+.content:hover .content-right{
+    transform: perspective(400px) rotateY(-90deg);
+}
+
+.content-left{
+    background-image: url("Classic-Doors-033.jpg");
+    position:absolute;
+    top:0;
+    left:-130px;
+    width:80%;
+    height: 200%;
+    transform: perspective(400px) rotateY(0);
+    transform-origin: left;
+    transition: all 2s;
+}
+
+.content:hover .content-left{
+    transform: perspective(400px) rotateY(90deg);
+}
